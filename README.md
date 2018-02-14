@@ -35,7 +35,7 @@ see how the data for these features is distributed and so on.
 ### Preprocessing Step (my favorite step :bowtie:)
 #### Feature Scaling
 What we try to achieve in this step, is to make every feature have a distribution close to the normal distribution, since if our data
-is not normally distributed then that means that the means and the median vary significantly, we can apply natural logarithm to do this job.
+is not normally distributed then that means that the mean and the median vary significantly, we can apply natural logarithm to do this job.
 Here's how the scatter matrix of our data looks like after applying the natural logarithm, notice how it differs from the scatter matrix
 representation above, it much closer to a normal distribution now and it's not skewed in any direction.
 
