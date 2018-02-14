@@ -10,7 +10,8 @@ The project consists of several steps as follows:
 In the first step of this project, we explore the different features our dataset contains such as 'Fresh', 'Milk', 'Grocery' and more, 
 each features represents a product category a customer could buy from, after that we do some necessary statistical analysis of our data
 such as calculating the mean, std, the minimum and maximum value of each category, etc.
-[!alt_text](https://github.com/laythra/customer_segments/blob/master/Images/stats.png)
+
+![alt_text](https://github.com/laythra/customer_segments/blob/master/Images/stats.png)
 
 #### Selecting Samples
 In the next step, we pick three samples from our data and dig deeper into their details, we compare these three data points trying to predict
@@ -28,7 +29,8 @@ I used sklearn's **'train_test_split'** function to split our data in order to p
 In order to get a better grasp of our dataset, a scatter matrix is constructed for each of the different 6 features our dataset contains,
 The scatter matrix generally helped me understand if there are features that have some sort of correlation between them, we can also
 see how the data for these features is distributed and so on.
-[!alt_text](https://github.com/laythra/customer_segments/blob/master/Images/Visualization%20-%201.png)
+
+![alt_text](https://github.com/laythra/customer_segments/blob/master/Images/Visualization%20-%201.png)
 
 ### Preprocessing Step (my favorite step :bowtie:)
 #### Feature Scaling
@@ -36,7 +38,8 @@ What we try to achieve in this step, is to make every feature have a distributio
 is not normally distributed then that means that the means and the median vary significantly, we can apply natural logarithm to do this job.
 Here's how the scatter matrix of our data looks like after applying the natural logarithm, notice how it differs from the scatter matrix
 representation above, it much closer to a normal distribution now and it's not skewed in any direction.
-[!alt_text](https://github.com/laythra/customer_segments/blob/master/Images/Visualization%20-%202.png)
+
+![alt_text](https://github.com/laythra/customer_segments/blob/master/Images/Visualization%20-%202.png)
 
 #### Outlier Detection
 In this important preprocessing step, we try to detect the outliers our data contains, usually outliers negatively affect the performance of our model, and they can often skew the results.
@@ -51,7 +54,7 @@ calculates the dimensions the best maximize the variance.
 We use the PCA function provided by the sklearn module and fit it to our "good_data" which had the necessary outliers removed and had been scaled 
 to get closer to a normal distribution
 
-[!alt_text](https://github.com/laythra/customer_segments/blob/master/Images/PCA.png)
+![alt_text](https://github.com/laythra/customer_segments/blob/master/Images/PCA.png)
 
 Notice the picture above, that each dimension has an explained variance, which means how much variance within the data is explained by that dimension alone.
 
@@ -72,7 +75,8 @@ by trying out a different number of clusters, I ended with the highest score whe
 
 #### Cluster Visualization
 Here we simply visualized the results after choosing the optimal number of clustering (which is 2)
-[!alt_text](https://github.com/laythra/customer_segments/blob/master/Images/Clusters.png)
+
+![alt_text](https://github.com/laythra/customer_segments/blob/master/Images/Clusters.png)
 
 ### Conclusion
 
